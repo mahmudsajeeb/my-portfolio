@@ -1,0 +1,37 @@
+.react-tabs {
+  font-family: 'Arial', sans-serif;
+  /* Add any other styles you want to apply to the whole tab component */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.react-tabs__tab-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.react-tabs__tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none; /* Remove the default border */
+  margin-right: 5px;
+  outline: none;
+  background-color: transparent; /* Set the background color to transparent */
+  border-bottom: 5px solid transparent; /* Add a transparent bottom border */
+  border-radius: 50%;
+  color: #fff; /* Add the desired text color */
+}
+
+.react-tabs__tab--selected {
+  border-color: yellow; /* Set the color of the bottom border when the tab is selected */
+}
+/* Custom styles for tab panels */
+.react-tabs__tab-panel {
+  padding: 20px;
+   
+  border-radius: 5px;
+  margin-top: 10px;
+}
