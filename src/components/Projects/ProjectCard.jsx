@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ProjectCard = ({item}) => {
-  // console.log(item,"item")
+  console.log(item.image,"item image")
   const [hovered, setHovered] = useState(false);
   // const {image,name,details} =item
   const handleHover = () => {
@@ -14,8 +14,7 @@ const ProjectCard = ({item}) => {
   };
 
   const footerTechnologies = hovered ?  item.tools :''
-  // const footerDescription = hovered ? item.details : '';
-  // const footerTechnologies = `${hovered ? 'Technologies:' item.technogies :''
+   
   return (
     <div
       className="w-96 p-4 border border-gray-300 rounded-md shadow-md transition duration-300 hover:shadow-lg"
@@ -34,7 +33,7 @@ const ProjectCard = ({item}) => {
       <div className="flex flex-col items-center justify-center p-4 bg-transparent rounded-b-md transition duration-300">
         <div>
           <h3 className="font-semibold text-white">{footerTechnologies}</h3>
-          {/* <p className="text-sm text-white">{footerDescription}</p> */}
+       
         </div>
         {hovered && (
           <div className="mt-4 flex flex-row items-center">
